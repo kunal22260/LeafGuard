@@ -14,7 +14,7 @@ st.title("🌿 LeafGuard")
 st.subheader("Detect plant diseases from leaf images using AI")
 
 # --- Load Model and Labels ---
-model = tf.keras.models.load_model("leafguard_model")
+model = tf.keras.models.load_model("leafguard_model.keras")
 
 with open("class_labels.json", "r") as f:
     class_labels = json.load(f)  # str keys
